@@ -1,64 +1,84 @@
 # Spring Boot Item Management API
 
-A simple Java Spring Boot REST API to manage items using in-memory storage.  
-This project is created as a backend assignment to demonstrate REST API design, validation, and documentation using Swagger.
+A Java Spring Boot REST API to manage items using in-memory storage.  
+This project demonstrates REST API design, validation, Swagger documentation, and cloud deployment.
 
 ---
 
-## 🚀 Tech Stack
+## 🚀 Live Application (Railway)
+
+- Swagger UI (Live):  
+  https://item-management-api-production-4fe2.up.railway.app/swagger-ui.html
+
+- Base API URL:  
+  https://item-management-api-production-4fe2.up.railway.app
+
+---
+
+## 🛠 Tech Stack
 
 - Java 17
 - Spring Boot
 - Spring Web
 - Jakarta Validation
 - In-memory storage (ArrayList)
-- Swagger (OpenAPI)
+- Swagger / OpenAPI 3
+- Railway Cloud Deployment
 
 ---
 
 ## 📌 Features
 
 - Add a new item
-- Get all items
-- Input validation
+- Fetch all items
+- Input validation using Jakarta Validation
 - Clean REST architecture
-- Swagger UI for API testing
+- Interactive Swagger UI
+- Deployed on Railway with public URL
 
 ---
 
 ## 📂 API Endpoints
 
-| Method | Endpoint        | Description        |
-|------|----------------|-------------------|
-| POST | /api/items     | Add new item      |
-| GET  | /api/items     | Get all items     |
+| Method | Endpoint     | Description      |
+|------|-------------|------------------|
+| POST | /api/items  | Add new item     |
+| GET  | /api/items  | Get all items    |
 
 ---
 
 ## 🧪 Swagger API Documentation
 
-After running the application, open:
+ ### ▶️ Production (Live)
+https://item-management-api-production-4fe2.up.railway.app/swagger-ui.html##
+
+### ▶️ Local
 http://localhost:8080/swagger-ui.html
 
 ---
 
-## ▶️ How to Run the Project
+## ▶️ Run Locally
 
-1. Clone the repository
-   git clone https://github.com/your-username/springboot-item-api.git�
+`bash
+mvn spring-boot:run
 
-2. Open in IDE (IntelliJ / VS Code)
+Server starts at: http://localhost:8080
 
-3. Run: mvn spring-boot:run
+Deployment Steps:
 
-4. Server starts on:  http://localhost:8080
+1. Push project to GitHub
+2. Create a new Railway project
+3. Connect GitHub repository
+4. Railway auto-detects Spring Boot
+5. App deployed with public URL
 
----
 
-## 🧑‍💻 Author
+👨‍💻 Author
 
-Pramod Kumar Rana  
-Java Backend Developer (Fresher)  
-LinkedIn: https://www.linkedin.com/in/pramod-rana-305b27209  
-GitHub: https://github.com/itspramodrana1
+Pramod Kumar Rana
 
+Java Backend Developer (Fresher)
+
+LinkedIn: https://www.linkedin.com/in/pramod-rana-305b27209�
+
+GitHub: https://github.com/itspramodrana1�
